@@ -1,0 +1,64 @@
+body{
+    background-image: url(/sanrio.png);
+    background-size: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Fuzzy Bubbles', sans-serif;
+    color: #ff66b2;
+    position: relative;
+    top: 150px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    transition: all 0.5s cubic-bezier( 0.64, 0.29, 0.34, 0.57 );
+    margin-bottom: 1rem;
+    animation: fadeIn 0.5s cubic-bezier( 0.64, 0.29, 0.34, 0.57 ) 0.5s; /* Added 's' to specify seconds */
+}
+h1:hover{
+    transform: scale(1.1);
+}
+p:hover{
+    transform: scale(1.1);
+}
+img{
+    transition: all 0.5s cubic-bezier( 0.64, 0.29, 0.34, 0.57 )
+}
+img:hover{
+    transform: scale(1.1);
+}
+p {
+    margin: 0 auto;
+    font-family: 'Fuzzy Bubbles', sans-serif;
+    color: #ff66b2;
+    position: relative;
+    top: 200px;
+    text-align: center;
+    font-size: 1rem;
+    transition: all 0.5s cubic-bezier( 0.64, 0.29, 0.34, 0.57 );
+    width: 70%;
+    font-weight: 700;
+    animation: fadeIn 0.5s cubic-bezier( 0.64, 0.29, 0.34, 0.57 ) 0.6s; /* Added 's' to specify seconds */
+}
+
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
